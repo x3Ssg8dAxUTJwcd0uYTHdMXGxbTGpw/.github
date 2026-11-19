@@ -1,0 +1,25 @@
+# name	color	description
+# 종류 (커밋 태그와 같다)
+feat	1D76DB	새 기능
+fix	D73A4A	버그 수정
+docs	0075CA	문서 추가·수정
+refactor	FBCA04	동작 변화 없는 코드 정리
+test	BFD4F2	테스트 추가·수정
+chore	C5DEF5	설정, 빌드, 기타 잡무
+# 영역
+area: design	F9D0C4	기획
+area: ml	5319E7	ML 학습·평가·ONNX
+area: client	0E8A16	Unity 클라이언트
+area: art	E99695	Blender 에셋
+area: server	006B75	NestJS API
+area: infra	BFDADC	배포·CI/CD·운영
+# 담당
+owner: claude	D4C5F9	Claude 담당
+owner: codex	C2E0C6	Codex 담당
+owner: user	FEF2C0	사용자 담당 (Unity 에디터, 아트 판단, 결정)
+# 우선순위
+P0	B60205	지금 막혀 있거나 가장 먼저
+P1	D93F0B	이번 단계 안에
+P2	FBCA04	여유 있을 때
+# 상태
+blocked	000000	다른 작업·결정을 기다리는 중
