@@ -1,0 +1,43 @@
+name: 작업 (refactor / test / chore)
+description: 코드 정리, 테스트, 설정·빌드 등. 종류 라벨을 직접 붙인다
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: 종류
+      options:
+        - refactor
+        - test
+        - chore
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: 목적
+    validations:
+      required: true
+  - type: textarea
+    id: tasks
+    attributes:
+      label: 작업 내용
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: 완료 조건
+    validations:
+      required: true
+  - type: dropdown
+    id: owner
+    attributes:
+      label: 담당
+      options:
+        - Claude
+        - Codex
+        - 사용자
+    validations:
+      required: true

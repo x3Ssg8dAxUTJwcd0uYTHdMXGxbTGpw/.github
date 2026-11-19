@@ -1,0 +1,42 @@
+name: 버그 (fix)
+description: 잘못 동작하는 것 고치기
+labels: ["fix"]
+body:
+  - type: textarea
+    id: symptom
+    attributes:
+      label: 증상
+      description: 무엇이 어떻게 잘못됐나. 오류 메시지·로그 포함
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: 재현 방법
+      value: |
+        1.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대 동작
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: 완료 조건
+      description: 고쳐졌음을 무엇으로 확인하는가 (재현 테스트 등)
+    validations:
+      required: true
+  - type: dropdown
+    id: owner
+    attributes:
+      label: 담당
+      options:
+        - Claude
+        - Codex
+        - 사용자
+    validations:
+      required: true
